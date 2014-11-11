@@ -1,0 +1,395 @@
+/********************************************
+	Tag Resets
+********************************************/
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/********************************************
+	Normalize CSS
+	http://necolas.github.com/normalize.css/
+********************************************/
+
+html {
+	height: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	min-height: 100%;
+	font-size: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+audio,
+canvas,
+video {
+	display: block;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+input,
+textarea,
+button,
+select {
+	margin: 0;
+	font-size: 100%;
+	line-height: normal;
+	vertical-align: baseline;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+textarea {
+	overflow: auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Float Clearing http://nicolasgallagher.com/micro-clearfix-hack */
+
+	.group:after {
+	    content: " "; /* 1 */
+	    display: table; /* 2 */
+	    clear: both;
+	}
+
+	.group {
+	    *zoom: 1; /* 3 */
+	    }
+/******************************************************/
+
+body {
+	 font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	}
+	
+html {
+	    font-size: 100%;
+	    line-height: 1;
+	    -moz-text-size-adjust: 100%;
+	    -ms-text-size-adjust: 100%;
+	    -webkit-text-size-adjust: 100%; 
+	    background: #a6aaa9;
+	}
+
+	
+
+p {
+	color: #7d8184;
+    font-size: 1em;
+    line-height: 1.5;
+	margin: .65em 0;
+	}
+	
+	
+/* HOME */
+
+/* Home page centering */
+.centered {
+  margin: 12% 0;
+  text-align: center;
+}
+	
+	
+#title-text
+{
+	color: #fff;
+    font-size: 2em;
+	letter-spacing: 1.2px;
+}
+
+#strapline
+{
+	font-weight:100;
+	font-size:95%;
+}
+
+#kanji
+{
+color: #c82506;
+}
+
+#home-image
+{
+	border-color: #7d8184;
+	border-style: solid;
+	border-width: 0.2em;
+	margin-bottom: 2em;
+}
+
+#enter-text
+{
+	font-size: 1em;
+	color: #dcdee0;
+	letter-spacing: 1px;
+	font-weight: 100;
+	text-decoration:none;
+	padding: 0 0 10em;
+}	
+	
+/* PORTFOLO */
+	
+#content, #container-nav, #container-breadcrumbs, #container-footer {
+	margin: 0 12%;
+	}
+
+#container-content {
+		padding: 5em 0 1.5em;
+	}
+	
+#content article {
+	 padding-top: .65em;
+	 padding-bottom: 1.3em;
+	 }
+	 
+#container-footer {
+		padding: 2em 0;
+	}
+
+#colophon {
+	color: #fff;
+	font-size: 0.65em;
+	letter-spacing: 1px;
+	font-weight: 100;
+}
+
+img {
+		max-width:100%;
+	}
+
+/* Box model for portfolio thumbnails */
+.wrapper 
+	{
+	    padding: 0 .65em;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+
+
+/** Portfolio Navigation */
+
+#container-nav {
+		color: #fff;
+		padding: 6em 0 1.5em;
+		border-bottom-color: #7d8184;
+		border-bottom-style: dotted;
+		border-bottom-width: 1px;
+	}
+	
+
+#nav nav {
+    float: right;
+}
+    
+#nav ul {
+	border: 0;
+    margin: 0;
+}
+        
+
+#nav li {
+    display: inline;
+    border: 0;
+    padding: 0 2em;
+}
+    
+#nav a {
+	display: inline-block;
+	font-size: 1em;
+	color: #dcdee0;
+	letter-spacing: 1px;
+	font-weight: 100;
+	text-decoration: none;
+	}
+
+#nav h3 a {
+	float: left;
+	color: #fff;
+    font-size: 1em;
+	letter-spacing: 1.2px;
+	font-weight: 150;
+	text-decoration: none;
+}
+
+
+#container-breadcrumbs {
+		padding: 0.8em 0 1em;
+	}
+
+#breadcrumbs ul {
+	border: 0;
+    margin: 0;
+}
+        
+
+#breadcrumbs li {
+    display: inline;
+    border: 0;
+    padding: 0 0;
+    font-size: 0.8em;
+	color: #dcdee0;
+	font-weight: 150;
+	text-decoration: none;
+}
+
+#breadcrumbs a {
+	font-size: 0.8em;
+	color: #dcdee0;
+	font-weight: 100;
+	text-decoration: none;
+}
+
+
+
+/* **************************************************
+	Media Queries for screen wider than 720px = 45em
+*****************************************************/
+
+@media screen and (min-width: 45em) {
+   
+    #portfolio article {
+		float:left;
+		width:33.3333%;
+		text-align:center;
+	}   
+    
+    
+}    
+
+
+/* **************************************************
+	Media Queries for screens wider than 1024
+*****************************************************/
+@media screen and (min-width: 1024px) {
+
+/* Remove bottom menu navigation - only needed for mobile  */  
+.mobilenav nav {
+	display: none;
+
+	}
+}
+
+/* **************************************************
+	Media Queries for screen narrower than 1024
+*****************************************************/
+@media screen and (max-width: 1023px) {
+
+/* Remove menu navigation on mobile */   
+#nav nav {
+	display: none;
+
+	}
+	
+/* Close up	space before start of thumb nails on mobile */
+#container-content {
+		padding: 3em 0 1.5em;
+	}
+	
+.mobilenav a {
+	font-size: 1em;
+	color: #dcdee0;
+	letter-spacing: 1px;
+	font-weight: 100;
+	text-decoration: none;
+	
+	}
+
+.mobilenav li {
+  list-style: none;
+  padding: 0.75em 0;
+}
+    
+}    
