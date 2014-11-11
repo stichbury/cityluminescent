@@ -319,14 +319,12 @@ img {
     display: inline;
     border: 0;
     padding: 0 0;
-    font-size: 0.8em;
 	color: #dcdee0;
 	font-weight: 150;
 	text-decoration: none;
 }
 
 #breadcrumbs a {
-	font-size: 0.8em;
 	color: #dcdee0;
 	font-weight: 100;
 	text-decoration: none;
