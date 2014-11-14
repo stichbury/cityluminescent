@@ -1,37 +1,81 @@
 * {
   margin: 0;
   padding: 0;
-  }
+}
 
 html {
   background: #a6aaa9;
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
   color: #7d8184;
-  }
-
+  -webkit-font-smoothing: antialiased;
+}
 
 
 .rslides {
-  margin: 0 auto;
+  margin: 0 auto 40px;
   }
 
-.rslides_container {
-  margin: 3% auto;
-  max-width: 400px;
-  padding: 0 30px;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
 
+
+.callbacks_container {
+  margin: 20px auto 0;
+  max-width: 500px;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
   width: 100%;
   }
 
-.centered-btns_nav {
-  z-index: 3;
+.callbacks {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.callbacks li {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.callbacks img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  height: auto;
+  width: 100%;
+  border: 0;
+  }
+
+.callbacks .caption {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  font-weight:400;
+  font-size:95%;
+  color: #7d8184;
+  font-size: 1em;
+  background: #a6aaa9;
+  text-align: right;	
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.5em 0;
+  margin: 0;
+  max-width: none;
+  }
+
+.callbacks_nav {
   position: absolute;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  top: 50%;
-  left: 0;
+  top: 52%;
+  left: -5em;
   opacity: 0.7;
+  z-index: 3;
   text-indent: -9999px;
   overflow: hidden;
   text-decoration: none;
@@ -41,56 +85,16 @@ html {
   margin-top: -45px;
   }
 
-.centered-btns_nav:active {
+.callbacks_nav:active {
   opacity: 1.0;
   }
 
-.centered-btns_nav.next {
+.callbacks_nav.next {
   left: auto;
   background-position: right top;
-  right: 0;
+  right: -5em;
   }
 
-
-.centered-btns_nav:focus {
-  outline: none;
-  }
-
-.centered-btns_tabs {
-  margin-top: 10px;
-  text-align: center;
-  }
-
-.centered-btns_tabs li {
-  display: inline;
-  float: none;
-  _float: left;
-  *float: left;
-  margin-right: 5px;
-  }
-
-.centered-btns_tabs a {
-  text-indent: -9999px;
-  overflow: hidden;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  background: #ccc;
-  background: rgba(0,0,0, .2);
-  display: inline-block;
-  _display: block;
-  *display: block;
-  -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
-  -moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
-  box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
-  width: 9px;
-  height: 9px;
-  }
-
-.centered-btns_here a {
-  background: #222;
-  background: rgba(0,0,0, .8);
-  }
 
 /*! http://responsiveslides.com v1.54 by @viljamis */
 
@@ -214,4 +218,60 @@ html {
 	text-decoration: none;
 }
 
+/* **************************************************
+	Media Queries for screen narrower than 1024
+*****************************************************/
+@media screen and (max-width: 1023px) {
 
+/* Remove menu navigation on mobile */   
+#nav nav {
+	display: none;
+
+	}
+	
+/* Close up	space before start of thumb nails on mobile */
+#container-content {
+		padding: 3em 0 1.5em;
+	}
+	
+.mobilenav a {
+	font-size: 1em;
+	color: #dcdee0;
+	letter-spacing: 1px;
+	font-weight: 100;
+	text-decoration: none;
+	
+	}
+
+.mobilenav li {
+  list-style: none;
+  padding: 0.75em 0;
+}
+    
+}    
+
+/* **************************************************
+	Media Queries for screen narrower than 700
+	Shrink image and move nav arrows
+*****************************************************/
+@media screen and (max-width: 700px) {
+
+.callbacks_container {
+  
+  max-width: 250px;
+ 
+  }
+
+.callbacks_nav {
+  
+  left: 0;
+  height: 61px;
+  width: 38px;
+  }
+
+
+.callbacks_nav.next {
+  right: 0;
+  }
+    
+}

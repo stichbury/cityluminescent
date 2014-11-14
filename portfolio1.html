@@ -19,14 +19,12 @@
 
     $(function () {
 
-      
-      $("#slider1").responsiveSlides({
+      $("#slider4").responsiveSlides({
         auto: false,
         pager: false,
         nav: true,
         speed: 500,
-        maxwidth: 500,
-        namespace: "centered-btns"
+        namespace: "callbacks"
       });
 
     });
@@ -62,15 +60,29 @@
 		</div> <!--container-breadcrumbs-->
 
 	
-    	  <div class="rslides_container">
-      		<ul class="rslides" id="slider1">
-        		<li><img src="./img/portfolio1.jpg" alt=""></li>
-        		<li><img src="./img/portfolio2.jpg" alt=""></li>
-        		<li><img src="./img/portfolio3.jpg" alt=""></li>
-      		</ul>
-    	  </div> <!-- rslides_container-->
+    	  
+
+ <!-- Slideshow 4 -->
+    <div class="callbacks_container">
+      <ul class="rslides" id="slider4">
+        <li>
+          <a href="#"><img src="./img/portfolio1.jpg" alt=""></a>
+          <p class="caption">This is a caption</p>
+        </li>
+        <li>
+          <img src="./img/portfolio2.jpg" alt="">
+          <p class="caption">This is another caption</p>
+        </li>
+        <li>
+          <img src="./img/portfolio3.jpg" alt="">
+          <p class="caption">The third caption</p>
+        </li>
+      </ul>
+    </div>
 
 
+
+	
 
 </body>
 
