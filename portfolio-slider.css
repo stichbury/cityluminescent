@@ -18,7 +18,7 @@ html {
 
 
 .callbacks_container {
-  margin: 20px auto 0;
+  margin: 5% auto 0;
   max-width: 500px;
   text-align: center;
   margin-bottom: 50px;
@@ -48,7 +48,8 @@ html {
   z-index: 1;
   height: auto;
   width: 100%;
-  border: 0;
+  border: 2px;
+  border-color: 0xfff;
   }
 
 .callbacks .caption {
@@ -127,35 +128,16 @@ html {
   height: auto;
   float: left;
   width: 100%;
-  border: 0;
+  border-style: solid;
+  border-width: 3px;  
+  border-color: black;
   }
 
 /************************************/
-#container-nav, #container-breadcrumbs, #container-footer {
-	margin: 0 12%;
+#container-nav, #container-breadcrumbs {
+	margin: 0 3%;
 	}
 
-
-#container-footer {
-		padding: 2em 0;
-	}
-
-#colophon {
-	color: #fff;
-	font-size: 0.65em;
-	letter-spacing: 1px;
-	font-weight: 100;
-}
-
-
-#container-nav {
-		color: #fff;
-		padding: 6em 0 1.5em;
-		border-bottom-color: #7d8184;
-		border-bottom-style: dotted;
-		border-bottom-width: 1px;
-	}
-	
 
 #nav nav {
     float: right;
@@ -193,7 +175,8 @@ html {
 
 
 #container-breadcrumbs {
-		padding: 0.8em 0 1em;
+		float: left;
+		padding: 0 0 1em;
 		text-align: left;
 	}
 
@@ -218,37 +201,6 @@ html {
 	text-decoration: none;
 }
 
-/* **************************************************
-	Media Queries for screen narrower than 1024
-*****************************************************/
-@media screen and (max-width: 1023px) {
-
-/* Remove menu navigation on mobile */   
-#nav nav {
-	display: none;
-
-	}
-	
-/* Close up	space before start of thumb nails on mobile */
-#container-content {
-		padding: 3em 0 1.5em;
-	}
-	
-.mobilenav a {
-	font-size: 1em;
-	color: #dcdee0;
-	letter-spacing: 1px;
-	font-weight: 100;
-	text-decoration: none;
-	
-	}
-
-.mobilenav li {
-  list-style: none;
-  padding: 0.75em 0;
-}
-    
-}    
 
 /* **************************************************
 	Media Queries for screen narrower than 700
@@ -256,6 +208,13 @@ html {
 *****************************************************/
 @media screen and (max-width: 700px) {
 
+/* Remove menu navigation on mobile */   
+#nav nav {
+	display: none;
+
+	}  
+	
+	
 .callbacks_container {
   
   max-width: 250px;

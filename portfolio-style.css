@@ -357,7 +357,7 @@ img {
 .mobilenav nav {
 	display: none;
 
-	}
+	}	
 }
 
 /* **************************************************
@@ -366,10 +366,12 @@ img {
 @media screen and (max-width: 1023px) {
 
 /* Remove menu navigation on mobile */   
-#nav nav {
+#nav nav, #breadcrumbs nav {
 	display: none;
 
 	}
+	
+	
 	
 /* Close up	space before start of thumb nails on mobile */
 #container-content {
