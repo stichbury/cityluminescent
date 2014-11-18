@@ -224,6 +224,10 @@ color: #c82506;
 #content, #container-nav, #container-breadcrumbs, #container-footer {
 	margin: 0 12%;
 	}
+	
+#about-container-footer {
+	margin: 0 3%;
+	}	
 
 #container-content {
 		padding: 5em 0 1.5em;
@@ -238,11 +242,17 @@ color: #c82506;
 		padding: 2em 0;
 	}
 
-#colophon {
+#colophon p {
 	color: #fff;
 	font-size: 0.65em;
 	letter-spacing: 1px;
 	font-weight: 100;
+}
+
+#colophon a {
+	text-decoration: none;
+	font-size: 0.85em;
+	color: #7d8184;
 }
 
 img {
@@ -330,6 +340,54 @@ img {
 	text-decoration: none;
 }
 
+/****************************************
+	ABOUT PAGE
+****************************************/
+#about-container-breadcrumbs {
+	margin: 0 3%;
+	padding: 1em 0 1em;
+	text-align: left;
+	}
+
+#about-breadcrumbs ul {
+	border: 0;
+    margin: 0;
+    padding-left: 0;
+}
+        
+#about-breadcrumbs li {
+    display: inline;
+    border: 0;
+    padding: 0 0;
+	color: #dcdee0;
+	font-weight: 150;
+	text-decoration: none;
+}
+
+#about-breadcrumbs a {
+	color: #dcdee0;
+	font-weight: 100;
+	text-decoration: none;
+} 
+    
+#about-content {
+  margin: 2% auto;
+  padding: 0 3%;
+  max-width: 550px;
+  text-align: left;
+  font-size: 1.2em;    
+  font-weight: 500;
+  position: relative;
+  width: 100%;
+  }
+	
+#about-text
+{
+	color: #fff;
+    font-size: 1.4em;
+	letter-spacing: 1.2px;
+}
+	
 
 
 /* **************************************************

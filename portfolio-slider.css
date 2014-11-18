@@ -134,51 +134,11 @@ html {
   }
 
 /************************************/
-#container-nav, #container-breadcrumbs {
-	margin: 0 3%;
-	}
-
-
-#nav nav {
-    float: right;
-}
-    
-#nav ul {
-	border: 0;
-    margin: 0;
-}
-        
-
-#nav li {
-    display: inline;
-    border: 0;
-    padding: 0 2em;
-}
-    
-#nav a {
-	display: inline-block;
-	font-size: 1em;
-	color: #dcdee0;
-	letter-spacing: 1px;
-	font-weight: 100;
-	text-decoration: none;
-	}
-
-#nav h3 a {
-	float: left;
-	color: #fff;
-    font-size: 1em;
-	letter-spacing: 1.2px;
-	font-weight: 150;
-	text-decoration: none;
-}
-
-
 #container-breadcrumbs {
-		float: left;
-		padding: 0 0 1em;
-		text-align: left;
-	}
+	margin: 0 3%;
+	padding: 1em 0 1em;
+	text-align: left;
+}
 
 #breadcrumbs ul {
 	border: 0;
@@ -201,6 +161,23 @@ html {
 	text-decoration: none;
 }
 
+#container-footer {
+		margin: 0 12%;
+		padding: 2em 0;
+	}
+
+#colophon p {
+	color: #fff;
+	font-size: 0.65em;
+	letter-spacing: 1px;
+	font-weight: 100;
+}
+
+#colophon a {
+	text-decoration: none;
+	font-size: 0.8em;
+	color: #7d8184;
+}
 
 /* **************************************************
 	Media Queries for screen narrower than 700
