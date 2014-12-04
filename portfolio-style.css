@@ -219,13 +219,13 @@ color: #c82506;
 	padding: 0 0 10em;
 }	
 	
-/* PORTFOLO */
+/* PORTFOLIO PAGE */
 	
 #content, #container-nav, #container-breadcrumbs, #container-footer {
 	margin: 0 12%;
 	}
 	
-#about-container-footer {
+#about-container-footer, #lightbox-container-footer {
 	margin: 0 3%;
 	}	
 
@@ -267,6 +267,7 @@ img {
 	    -moz-box-sizing: border-box;
 	    box-sizing: border-box;
 	}
+
 
 
 /** Portfolio Navigation */
@@ -341,21 +342,21 @@ img {
 }
 
 /****************************************
-	ABOUT PAGE
+	ABOUT PAGE and LIGHTBOX PAGE
 ****************************************/
-#about-container-breadcrumbs {
+#about-container-breadcrumbs, #lightbox-container-breadcrumbs {
 	margin: 0 3%;
 	padding: 1em 0 1em;
 	text-align: left;
 	}
 
-#about-breadcrumbs ul {
+#about-breadcrumbs ul, #lightbox-breadcrumbs ul {
 	border: 0;
     margin: 0;
     padding-left: 0;
 }
         
-#about-breadcrumbs li {
+#about-breadcrumbs li, #lightbox-breadcrumbs li {
     display: inline;
     border: 0;
     padding: 0 0;
@@ -364,7 +365,7 @@ img {
 	text-decoration: none;
 }
 
-#about-breadcrumbs a {
+#about-breadcrumbs a, #lightbox-breadcrumbs a {
 	color: #dcdee0;
 	font-weight: 100;
 	text-decoration: none;
@@ -399,6 +400,12 @@ img {
     #portfolio article {
 		float:left;
 		width:33.3333%;
+		text-align:center;
+	}   
+
+    #thelightbox article {
+		float:left;
+		width:20%;
 		text-align:center;
 	}   
     
