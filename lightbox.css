@@ -53,6 +53,7 @@ body:after {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
+
 .lb-outerContainer:after {
   content: "";
   display: table;
