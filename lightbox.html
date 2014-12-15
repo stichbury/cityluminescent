@@ -17,19 +17,11 @@
 		<![endif]-->
 		
 	<link href="./lightbox.css" rel="stylesheet" />
-    <link href="./thumbs.css" rel="stylesheet"  />    
   	
     <script src="./js/jquery-1.11.0.min.js"></script>
 	<script src="./js/lightbox.min.js"></script>	
-    <script src="./js/jquery.thumbs.js"></script>
 
-<script type="text/javascript">
-	$(document).ready(function() {
-		$(".thumb").thumbs();
-	});
-</script>
-        
-		
+	
 	</head>
 
 	<body lang="en">
@@ -44,26 +36,30 @@
            	</ul>
 		</section> 
 	</div> <!-- lightbox-container-breadcrumbs -->
-
-<!-- The Lightbox -->
+        
+    <!-- The Lightbox -->
 		
-		<div id="container-content">
+    <div id="container-content">
 		<article id="content" >
 			<section id="thelightbox" class="group">
 <!-- 1 -->
-			<article class="wrapper">
+			<article class="wrapper">		
 					<figure>
 						<a href="./img/portfolioLS.jpg" data-lightbox="lb-image-1">
-						<img src="./img/portfolio1/portfolio2.jpg"  />
-						</a>
+						<span class="thumb-img">
+                        <img src="./img/portfolio1/portfolio2.jpg" />
+                        </span>    
+						</a>	
 					</figure>
-
 			</article>
 <!-- 2 -->
+                
 			<article class="wrapper">		
 					<figure>
 						<a href="./img/portfolioLS.jpg" data-lightbox="lb-image-2">
-						<img src="./img/portfolio1/portfolio2.jpg" />
+						<span class="thumb-img">
+                        <img src="./img/portfolio1/portfolio2.jpg" />
+                        </span>    
 						</a>	
 					</figure>
 			</article>
